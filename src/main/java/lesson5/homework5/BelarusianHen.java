@@ -17,9 +17,9 @@ public class BelarusianHen extends Hen {
         return eggsCount;
     }
 
-    public String getDescription() {
-        return super.getDescription() + "My country is " + this.countryName + ", I produce " + this.eggsCount + " eggs per month.";
-    }
+    public String getDescription(){
+        return super.getDescription(this.countryName, this.eggsCount);
+    };
 
     ;
 }

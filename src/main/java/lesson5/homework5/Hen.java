@@ -11,8 +11,8 @@ public abstract class Hen {
     public abstract int getCountOfEggsPerMonth();
 
 
-    public String getDescription(){
-        return "Hen Description: ";
+    public String getDescription(String countryName, int eggsCount){
+        return "Hen Description: " + "My country is " + countryName + ", I produce " + eggsCount + " eggs per month.";
     };
 
 }
