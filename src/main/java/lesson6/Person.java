@@ -27,6 +27,14 @@ public class Person implements Comparable<Person>{
     }
 
     @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", surName='" + surName + '\'' +
+                '}';
+    }
+
+    @Override
     public int compareTo(Person o) {
         return getSurName().compareToIgnoreCase(o.getSurName());
     }
